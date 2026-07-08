@@ -1,0 +1,161 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#090909;
+    color:white;
+}
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(0,0,0,.75);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+.logo{
+    color:#ff1a1a;
+    font-size:30px;
+    font-weight:800;
+    text-shadow:0 0 20px red;
+}
+
+.navbar ul{
+    display:flex;
+    list-style:none;
+    gap:35px;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.navbar a:hover{
+    color:#ff1a1a;
+}
+
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:
+    linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.85)),
+    url("https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1800&q=80");
+    background-size:cover;
+    background-position:center;
+}
+
+.hero h1{
+    font-size:90px;
+    color:#ff1a1a;
+    text-shadow:0 0 35px red;
+}
+
+.hero p{
+    margin-top:15px;
+    color:#ddd;
+    font-size:22px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:35px;
+    padding:18px 45px;
+    border-radius:8px;
+    background:#ff1a1a;
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+    font-weight:bold;
+}
+
+.btn:hover{
+    transform:scale(1.08);
+    box-shadow:0 0 30px red;
+}
+
+.section{
+    padding:100px 10%;
+}
+
+.section h2{
+    color:#ff1a1a;
+    margin-bottom:35px;
+    font-size:40px;
+}
+
+.card{
+    background:#141414;
+    padding:25px;
+    margin:20px 0;
+    border-left:5px solid red;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 25px rgba(255,0,0,.5);
+}
+
+.staff{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.member{
+    background:#141414;
+    padding:25px;
+    text-align:center;
+    border-radius:12px;
+}
+
+.member h3{
+    color:#ff1a1a;
+    margin-bottom:10px;
+}
+
+footer{
+    background:#050505;
+    text-align:center;
+    padding:30px;
+    color:#888;
+}
+
+@media(max-width:900px){
+
+.hero h1{
+font-size:55px;
+}
+
+.navbar{
+flex-direction:column;
+gap:20px;
+}
+
+.navbar ul{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+}
